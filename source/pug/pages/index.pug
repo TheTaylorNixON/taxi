@@ -1,0 +1,31 @@
+extends ../_template.pug
+
+block content
+    +header()
+    section.index-section
+        .index-container
+            .input-form
+                .destination
+                    .destination-from
+                        input(type="text" placeholder="Откуда*")
+                    .destination-to
+                        input(type="text", placeholder="Куда")
+                .info
+                    .info-phone
+                        input(type="tel", placeholder="Телефон")
+                    .info-time
+                        input(type="text", placeholder="Ближайшее время")
+                        //- установить конкретное время
+                    .info-place
+                        input(type="text", placeholder="Подъезд")
+                .coments
+                    textarea(name="", placeholder="Коментарий к заказу")
+            .butns
+                .order-btn
+                    a(href="")
+                        input(type="button", value="Вызвать Такси Онлайн")
+                p.butns__or ИЛИ
+                .call-btn
+                    a(href="tel:535")
+                        input(type="button", value="Заказать такси по телефону: 535")
+    +footer()

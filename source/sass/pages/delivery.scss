@@ -1,0 +1,102 @@
+.del-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+// ------------------------ section 1 ---------------------------
+
+.del-sec1-bg {
+    background: url(../img/delivery-bg.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.del-sec1-overflow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.del-sec1-form {
+    @include centered();
+    text-align: center;
+}
+
+.del-form-title {
+    font-size: 88px;
+    color: #fff;
+}
+
+.del-form-subtitle {
+    font-size: 36px;
+    color: #fff;
+    margin: 10px 0 40px 0;
+}
+
+.del-form-download {
+    color: #fbb623;
+    font-size: 25px;
+}
+
+// ------------------------ section 2 ---------------------------
+
+.del-section2 {
+    background-image: linear-gradient(#fff, #fff 43%, #e8e8e8);
+}
+
+.del-sec2-advantages {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 70%;
+}
+
+.midle-container {
+    @include centered();
+    width: 100%;
+    padding: 80px 30px;
+}
+
+.del-sec2-title {
+    font-size: 65px;
+    margin-bottom: 20px;
+    color: #fbb623;
+}
+
+.del-sec2-subtitle {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.del-sec2-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.del-sec2-item {
+    width: 33%;
+    padding: 50px 20px 0 20px;
+    & .icon-text {
+        font-size: 16px;
+    }
+}
+
+.del-sec2-image {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    & img {
+        @include centered();
+        height: 65%;
+    }
+}
+
+// ------------------------ section 3 ---------------------------
+
+// ------------------------ section 4 ---------------------------

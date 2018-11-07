@@ -1,0 +1,46 @@
+.index-section {
+    height: calc(100vh - 54px);
+    background-image: linear-gradient(#fff, #fff 43%, #e8e8e8);
+}
+
+.index-container {
+    @include centered();
+    border-radius: 4px;
+    text-align: center;
+}
+
+.input-form {
+    & input {
+        margin-bottom: 6px;
+    }
+}
+
+.destination-from, .destination-to {
+    display: inline-block;
+}
+
+.info, .coments {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.coments {
+    & textarea {
+        margin-bottom: 6px;
+        height: 201px;
+    }
+}
+
+.order-btn, .call-btn {
+    & input {
+        cursor: pointer;
+        background-color: #fbb623;
+        outline: none;
+        margin: 0;
+    }
+}
+
+.butns__or {
+    font-size: 20px;
+    margin: 10px;
+}

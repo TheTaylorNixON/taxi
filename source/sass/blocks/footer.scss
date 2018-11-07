@@ -1,0 +1,49 @@
+// ------------------------- footer ----------------------------
+
+footer {
+    height: 54px;
+    width: 100%;
+    background: #343434;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    & ul {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer-socials {
+    & a {
+        display: block;
+    }
+    & svg {
+        fill: #fff;
+    }
+    & svg:hover {
+        fill: #fbb623;
+    }
+}
+
+.socials-item {
+    padding: 8px;
+}
+
+.menu-item {
+    padding: 8px;
+    & a {
+        color: #fff;
+        transition: color .3s ease;
+    }
+    &:hover {
+        & a {
+            color: #fbb623;
+        }
+    }
+}
+
+.footer-appbuttons {
+    & li {
+        padding: 0 8px;
+    }
+}

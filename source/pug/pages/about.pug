@@ -1,0 +1,131 @@
+extends ../_template.pug
+
+block content
+    +header()
+    .homepage
+        section.hp-section.hp-section1
+            .section1-bg
+                .overlay
+            .section1-title
+                .title1 Lite
+                .title2 Сервис c лучшими водителями
+                .download Скачайте бесплатно:
+                ul.apps
+                    li
+                        a(href="#").app-store
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32")
+                                path(fill="#fff" d="M25.385 17.004c0.047 4.841 4.559 6.449 4.611 6.473-0.041 0.109-0.723 2.295-2.381 4.552-1.434 1.949-2.918 3.89-5.26 3.929-2.303 0.041-3.043-1.271-5.676-1.271-2.632 0-3.454 1.232-5.632 1.312-2.259 0.080-3.981-2.104-5.427-4.048-2.954-3.974-5.21-11.229-2.178-16.125 1.503-2.432 4.192-3.972 7.112-4.013 2.22-0.037 4.317 1.394 5.672 1.394 1.359 0 3.906-1.719 6.582-1.467 1.121 0.043 4.268 0.42 6.287 3.169-0.159 0.097-3.755 2.041-3.71 6.095zM15.956 7.375c-0.261-1.839 0.712-3.751 1.824-4.952 1.241-1.353 3.335-2.359 5.064-2.423 0.221 1.874-0.59 3.755-1.789 5.109-1.201 1.352-3.17 2.405-5.099 2.266z")
+                            span App Store
+                    li
+                        a(href="#").gooogle-play
+                            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32")
+                                path(fill="#fff" d="M1.627 0c-0.040 0.124-0.080 0.247-0.080 0.411v30.972c0 0.289 0.081 0.453 0.245 0.617l15.22-16.124-15.385-15.876zM18.039 16.944l3.935 4.060-5.617 3.2s-7.14 4.059-11.077 6.319l12.76-13.579zM19.107 15.836l4.221 4.389c0.661-0.368 5.828-3.323 6.565-3.733 0.779-0.451 0.7-1.067 0.039-1.395-0.612-0.34-5.779-3.3-6.56-3.78l-4.265 4.519zM18.036 14.769l3.979-4.225-5.679-3.241s-9.257-5.296-12.337-7.064l14.037 14.531z")
+                            span Google Play
+            a(href="/#").arrow-down#js-arrow-down
+
+        section.hp-section.hp-section2#js-section-2
+            .section-2-image
+                img(src="./img/mobile-app.png", alt="")
+            .section-2-advantages
+                .middle.middle--section-2
+                    .advantages-title
+                        h2 Почему Lite?
+                    .advantages-items
+                        ul.advantages-list
+                            li.iconContent
+                                .icon
+                                    img(src="./img/icons/icon1.png", alt="")
+                                .icon-text Лучшие водители
+                                .icon-subtext Средний рейтинг наших водителей выше 4.7
+                            li.iconContent
+                                .icon
+                                    img(src="./img/icons/icon2.png", alt="")
+                                .icon-text Быстрая подача
+                                .icon-subtext Такси приедет за 5 минут
+                            li.iconContent
+                                .icon
+                                    img(src="./img/icons/icon4.png", alt="")
+                                .icon-text Доступная цена
+                                .icon-subtext Такси от 50 рублей
+                            li.iconContent
+                                .icon
+                                    img(src="./img/icons/icon4.png", alt="")
+                                .icon-text Удобная оплата
+                                .icon-subtext Платите наличными или банковской картой
+                            li.iconContent
+                                .icon
+                                    img(src="./img/icons/icon5.png", alt="")
+                                .icon-text Безопасность
+                                .icon-subtext Такси от подъезда до подъезда
+                            li.iconContent
+                                .icon
+                                    img(src="./img/icons/icon6.png", alt="")
+                                .icon-text Бесплатные поездки
+                                .icon-subtext Приглашайте друзей и получайте бонусы
+
+        section.hp-section.hp-section3
+            .middle.middle--section-3
+                .title
+                    h2 Заказать Lite Taxi
+                ul.steps
+                    li.steps-items
+                        .steps-icon
+                            img(src="./img/svg/section3-icon1.svg", alt="")
+                        .steps-title СКАЧАЙТЕ БЕСПЛАТНОЕ ПРИЛОЖЕНИЕ
+                        .steps-text.steps-text--icons
+                            a(href="#")
+                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32")
+                                    path(fill="#000000" d="M25.385 17.004c0.047 4.841 4.559 6.449 4.611 6.473-0.041 0.109-0.723 2.295-2.381 4.552-1.434 1.949-2.918 3.89-5.26 3.929-2.303 0.041-3.043-1.271-5.676-1.271-2.632 0-3.454 1.232-5.632 1.312-2.259 0.080-3.981-2.104-5.427-4.048-2.954-3.974-5.21-11.229-2.178-16.125 1.503-2.432 4.192-3.972 7.112-4.013 2.22-0.037 4.317 1.394 5.672 1.394 1.359 0 3.906-1.719 6.582-1.467 1.121 0.043 4.268 0.42 6.287 3.169-0.159 0.097-3.755 2.041-3.71 6.095zM15.956 7.375c-0.261-1.839 0.712-3.751 1.824-4.952 1.241-1.353 3.335-2.359 5.064-2.423 0.221 1.874-0.59 3.755-1.789 5.109-1.201 1.352-3.17 2.405-5.099 2.266z")
+                                span iOS
+                            a(href="#")
+                                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32")
+                                    path(fill="#000000" d="M1.627 0c-0.040 0.124-0.080 0.247-0.080 0.411v30.972c0 0.289 0.081 0.453 0.245 0.617l15.22-16.124-15.385-15.876zM18.039 16.944l3.935 4.060-5.617 3.2s-7.14 4.059-11.077 6.319l12.76-13.579zM19.107 15.836l4.221 4.389c0.661-0.368 5.828-3.323 6.565-3.733 0.779-0.451 0.7-1.067 0.039-1.395-0.612-0.34-5.779-3.3-6.56-3.78l-4.265 4.519zM18.036 14.769l3.979-4.225-5.679-3.241s-9.257-5.296-12.337-7.064l14.037 14.531z")
+                                span Android
+                    li.steps-items
+                        .steps-icon
+                            img(src="./img/svg/section3-icon2.svg", alt="")
+                        .steps-title ЗАРЕГИСТРИРУЙТЕСЬ
+                        .steps-text Введите ваш номер телефона
+                    li.steps-items
+                        .steps-icon
+                            img(src="./img/svg/section3-icon3.svg", alt="")
+                        .steps-title Lite TAXI
+                        .steps-text Заказать такси одной кнопкой
+        section.hp-section.hp-section4
+            .middle.middle--section4
+                .section4-text Lite – решение для частных клиентов и бизнеса
+                .section4-title С Lite ездят более 17,500 корпораций по всему миру
+                .section4-text Lite – лидирующий игрок на мировом рынке корпоративного такси                    
+                a(href="#").section4-button Узнайте подробнее
+
+        section.hp-section5
+            .workarea
+                .workarea-title
+                    h2 Напишите нам
+                    p Для любых вопросов и предложений заполните форму
+                form(action="")
+                    .form__block
+                        input(type="text", placeholder="Имя*")
+                        input(type="email", placeholder="Phone*")
+                        input(type="tel", placeholder="Email")
+                    .form__block
+                        textarea(name="message", cols="30", rows="10", placeholder="Сообщение*")
+                    input(type="submit", value="Отправить").form-submit
+            .section-contacts
+                .contacts
+                    h2 Контакты службы поддержки <br> в каждом городе:
+                    .contacts-phones
+                        ul.phones-list
+                            li.phones-list__item
+                                strong Москва
+                                br
+                                span 8 (499) 999-08-39
+                            li.phones-list__item
+                                strong Санкт-Петербург
+                                br
+                                span 8 (499) 999-08-39
+                            li.phones-list__item
+                                strong Звонок по России
+                                br
+                                span 8 (499) 999-08-39
+    +footer()
