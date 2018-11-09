@@ -21,12 +21,11 @@ var hamburger = function () {
 
 // ----------------------------- arrow-down-scroll
 
-var scroll = function () {
-    var arrow = document.getElementById('js-arrow-down'),
-        sectionToScroll = document.getElementById('js-section-2'),
-        distanceToTop = sectionToScroll.offsetTop;
+var scroll = function (arrow) {
+    var sectionToScroll = document.getElementById('js-section-2');
 
     arrow.onclick = function () {
+        var distanceToTop = sectionToScroll.offsetTop;
         window.scrollTo({
             top: distanceToTop,
             behavior: "smooth"
@@ -38,11 +37,13 @@ var scroll = function () {
 
 
 (function () {
+    var arrow = document.getElementById('js-arrow-down');
+
     if (document.getElementById('btn-nav')) {
         hamburger();
     }
     
-    if (document.getElementById('js-arrow-down')) {
-        scroll();
+    if (arrow) {
+        scroll(arrow);
     }
 })();

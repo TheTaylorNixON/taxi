@@ -1,6 +1,8 @@
 .index-section {
     height: calc(100vh - 54px);
     background-image: linear-gradient(#fff, #fff 43%, #e8e8e8);
+    position: relative;
+    min-height: 650px;
 }
 
 .index-container {

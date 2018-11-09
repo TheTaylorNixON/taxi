@@ -35,39 +35,99 @@
         </div>
       </nav>
     </header>
-    <section class="index-section">
-      <div class="index-container">
-        <div class="input-form">
-          <div class="destination">
-            <div class="destination-from">
-              <input class="workarea-form-input" type="text" placeholder="Откуда*"/>
-            </div>
-            <div class="destination-to">
-              <input class="workarea-form-input" type="text" placeholder="Куда"/>
-            </div>
+    <section class="section bs-section1">
+      <div class="bs-sec1-bg"></div>
+      <div class="bs-container">
+        <div class="bs-sec1-container">
+          <div class="bs-sec1-title_container">
+            <div class="sec1-title">Lite Business Solutions</div>
+            <div class="sec1-text">Корпоративное такси. Управление поездками и оптимизация работы компании</div>
           </div>
-          <div class="info">
-            <div class="info-phone">
-              <input class="workarea-form-input" type="tel" placeholder="Телефон"/>
-            </div>
-            <div class="info-time">
-              <input class="workarea-form-input" type="text" placeholder="Ближайшее время"/>
-            </div>
-            <div class="info-place">
-              <input class="workarea-form-input" type="text" placeholder="Подъезд"/>
-            </div>
+          <div class="bs-sec1-registration_container">
+            <h3>Присоединиться</h3>
+            <form class="bs-sec1-registration-form" action="/">
+              <input type="text" placeholder="Название организации"/>
+              <input type="text" placeholder="Кол-во сотрудников"/>
+              <input type="text" placeholder="Форма ооплаты"/>
+              <input class="bs-sec1-registration-form-submit" type="submit" value="ПОДКЛЮЧИТЬ"/>
+            </form>
           </div>
-          <div class="coments">
-            <textarea class="workarea-form-textarea" name="" placeholder="Коментарий к заказу"></textarea>
-          </div>
+          <div class="bs-sec1-car_image"><img src="./img/svg/car-img.svg" alt=""/></div>
         </div>
-        <div class="butns">
-          <div class="order-btn"><a href="">
-              <input class="workarea-form-input" type="button" value="Вызвать Такси Онлайн"/></a></div>
-          <p class="butns__or">ИЛИ</p>
-          <div class="call-btn"><a href="tel:535">
-              <input class="workarea-form-input" type="button" value="Заказать такси по телефону: 535"/></a></div>
+      </div>
+    </section>
+    <section class="section bs-section2">
+      <div class="bs-container">
+        <div class="bs-sec1-advantages">
+          <div class="bs-sec1-advantages-title">Почему Lite ?</div>
+          <ul class="bs-sec1-advantages-list">
+            <li class="bs-sec1-advantages-item"><img class="bs-sec1-item-icon" src="./img/svg/bs-icon1.svg" alt=""/>
+              <div class="bs-sec1-item-title">Сокращайте расходы</div>
+              <div class="bs-sec1-item-text">Такси может выгодно заменить ваш собственный автопарк</div>
+            </li>
+            <li class="bs-sec1-advantages-item"><img class="bs-sec1-item-icon" src="./img/svg/bs-icon2.svg" alt=""/>
+              <div class="bs-sec1-item-title">Получайте скидки</div>
+              <div class="bs-sec1-item-text">Тарифы с учетом индивидуальных потребностей вашей организации</div>
+            </li>
+            <li class="bs-sec1-advantages-item"><img class="bs-sec1-item-icon" src="./img/svg/bs-icon3.svg" alt=""/>
+              <div class="bs-sec1-item-title">Ожидайте меньше</div>
+              <div class="bs-sec1-item-text">Корпоративные клиенты обслуживаются в первую очередь</div>
+            </li>
+            <li class="bs-sec1-advantages-item"><img class="bs-sec1-item-icon" src="./img/svg/bs-icon4.svg" alt=""/>
+              <div class="bs-sec1-item-title">Оплачивайте удобнее и быстрее</div>
+              <div class="bs-sec1-item-text">Оплата банковской картой или по счету</div>
+            </li>
+            <li class="bs-sec1-advantages-item"><img class="bs-sec1-item-icon" src="./img/svg/bs-icon5.svg" alt=""/>
+              <div class="bs-sec1-item-title">Контролируйте отчетность</div>
+              <div class="bs-sec1-item-text">Можно просматривать отчёты за любой период и выгружать их в формате Excel</div>
+            </li>
+            <li class="bs-sec1-advantages-item"><img class="bs-sec1-item-icon" src="./img/svg/bs-icon6.svg" alt=""/>
+              <div class="bs-sec1-item-title">Получайте только лучшее</div>
+              <div class="bs-sec1-item-text">Безопасность, лучшие водители и машины</div>
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
+    <section class="section bs-section3">
+      <div class="bs-sec3-connectYourself"><img class="bs-sec3-connectYourself__img" src="./img/bs-sec3-img.jpeg" alt=""/>
+        <div class="bs-sec3-connectYourself__info">
+          <h2>Подключитесь самостоятельно</h2>
+          <p>На заполнение формы уйдёт всего несколько минут</p><a class="bs-sec3-connectYourself__info__btn" href="#">ПОДКЛЮЧИТЬСЯ СЕЙЧАС</a>
+        </div>
+      </div>
+    </section>
+    <section class="section bs-section4">
+      <div class="bs-sec3-connectForm">
+        <h2 class="bs-sec3-connectForm__title">Или оставьте заявку</h2>
+        <p class="bs-sec3-connectForm__text">Мы свяжемся с вами, чтобы обсудить детали подключения</p>
+        <form class="bs-sec3-connectForm__form" action="">
+          <div class="connectForm__fields">
+            <div class="connectForm__field">
+              <label for="bs-form_field-1">Организация</label>
+              <input type="text" name="" id="bs-form_field-1"/>
+            </div>
+            <div class="connectForm__field">
+              <label for="bs-form_field-2">Имя, Фамилия</label>
+              <input type="text" name="" id="bs-form_field-2"/>
+            </div>
+            <div class="connectForm__field">
+              <label for="bs-form_field-3">Эл. почта</label>
+              <input type="text" name="" id="bs-form_field-3"/>
+            </div>
+            <div class="connectForm__field">
+              <label for="bs-form_field-4">Номер телефона</label>
+              <input type="text" name="" id="bs-form_field-4"/>
+            </div>
+            <div class="connectForm__field">
+              <label for="bs-form_field-5">Кол-во сотрудников</label>
+              <input type="text" name="" id="bs-form_field-5"/>
+            </div>
+          </div>
+          <div class="connectForm__button">
+            <input type="submit" value="ОТПРАВИТЬ"/>
+          </div>
+        </form>
       </div>
     </section>
     <footer>

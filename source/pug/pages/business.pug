@@ -1,0 +1,81 @@
+extends ../_template.pug
+
+block content
+    +header()
+    section.section.bs-section1
+        .bs-sec1-bg
+        .bs-container
+            .bs-sec1-container
+                .bs-sec1-title_container
+                    .sec1-title Lite Business Solutions
+                    .sec1-text Корпоративное такси. Управление поездками и оптимизация работы компании
+                .bs-sec1-registration_container
+                    h3 Присоединиться
+                    form(action="/").bs-sec1-registration-form
+                        input(type="text", placeholder="Название организации")
+                        input(type="text", placeholder="Кол-во сотрудников")
+                        input(type="text", placeholder="Форма ооплаты")
+                        input(type="submit", value="ПОДКЛЮЧИТЬ").bs-sec1-registration-form-submit
+                .bs-sec1-car_image
+                    img(src="./img/svg/car-img.svg", alt="")
+    section.section.bs-section2
+        .bs-container
+            .bs-sec1-advantages
+                .bs-sec1-advantages-title Почему Lite ?
+                ul.bs-sec1-advantages-list
+                    li.bs-sec1-advantages-item
+                        img(src="./img/svg/bs-icon1.svg", alt="").bs-sec1-item-icon
+                        .bs-sec1-item-title Сокращайте расходы
+                        .bs-sec1-item-text Такси может выгодно заменить ваш собственный автопарк
+                    li.bs-sec1-advantages-item
+                        img(src="./img/svg/bs-icon2.svg", alt="").bs-sec1-item-icon
+                        .bs-sec1-item-title Получайте скидки
+                        .bs-sec1-item-text Тарифы с учетом индивидуальных потребностей вашей организации
+                    li.bs-sec1-advantages-item
+                        img(src="./img/svg/bs-icon3.svg", alt="").bs-sec1-item-icon
+                        .bs-sec1-item-title Ожидайте меньше
+                        .bs-sec1-item-text Корпоративные клиенты обслуживаются в первую очередь
+                    li.bs-sec1-advantages-item
+                        img(src="./img/svg/bs-icon4.svg", alt="").bs-sec1-item-icon
+                        .bs-sec1-item-title Оплачивайте удобнее и быстрее
+                        .bs-sec1-item-text Оплата банковской картой или по счету
+                    li.bs-sec1-advantages-item
+                        img(src="./img/svg/bs-icon5.svg", alt="").bs-sec1-item-icon
+                        .bs-sec1-item-title Контролируйте отчетность
+                        .bs-sec1-item-text Можно просматривать отчёты за любой период и выгружать их в формате Excel
+                    li.bs-sec1-advantages-item
+                        img(src="./img/svg/bs-icon6.svg", alt="").bs-sec1-item-icon
+                        .bs-sec1-item-title Получайте только лучшее
+                        .bs-sec1-item-text Безопасность, лучшие водители и машины
+    section.section.bs-section3
+        .bs-sec3-connectYourself
+            img(src="./img/bs-sec3-img.jpeg", alt="").bs-sec3-connectYourself__img
+            .bs-sec3-connectYourself__info
+                h2 Подключитесь самостоятельно
+                p На заполнение формы уйдёт всего несколько минут
+                a(href="#").bs-sec3-connectYourself__info__btn ПОДКЛЮЧИТЬСЯ СЕЙЧАС
+    section.section.bs-section4
+        .bs-sec3-connectForm
+            h2.bs-sec3-connectForm__title Или оставьте заявку
+            p.bs-sec3-connectForm__text Мы свяжемся с вами, чтобы обсудить детали подключения
+            form(action="").bs-sec3-connectForm__form
+                .connectForm__fields
+                    .connectForm__field
+                        label(for="bs-form_field-1") Организация
+                        input(type="text", name="", id="bs-form_field-1")
+                    .connectForm__field
+                        label(for="bs-form_field-2") Имя, Фамилия
+                        input(type="text", name="", id="bs-form_field-2")
+                    .connectForm__field
+                        label(for="bs-form_field-3") Эл. почта
+                        input(type="text", name="", id="bs-form_field-3")
+                    .connectForm__field
+                        label(for="bs-form_field-4") Номер телефона
+                        input(type="text", name="", id="bs-form_field-4")
+                    .connectForm__field
+                        label(for="bs-form_field-5") Кол-во сотрудников
+                        input(type="text", name="", id="bs-form_field-5")
+                .connectForm__button
+                    input(type="submit", value="ОТПРАВИТЬ")
+
+    +footer()

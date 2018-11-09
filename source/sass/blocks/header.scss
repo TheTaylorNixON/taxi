@@ -7,18 +7,15 @@ header {
     z-index: 99;
     background: rgba(255,255,255,0.95);
     overflow: hidden;
+    @include phone() {
+        height: 65px;
+    }
 }
 
 nav {
     height: 100%;
     display: flex;
     align-items: center;
-}
-
-.hp-section {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
 }
 
 #btn-nav {
@@ -75,6 +72,12 @@ nav {
     align-items: center;
     & :first-child {
         margin-bottom: 2px;
+        padding: 15px 0;
+    }
+    @include phone() {
+        & :not(:first-child) {
+            display: none;
+        }
     }
 }
 
@@ -92,10 +95,12 @@ nav {
         }
     }
     &:nth-child(1) {
-        padding: 8px 20px;
+        // padding: 8px 20px;
+        padding: 30px 20px;
         &:after {
             // bottom: -13px;
-            bottom: -5px;
+            // bottom: -5px;
+            bottom: 11px;
         }
     }
 }
@@ -124,6 +129,9 @@ nav {
     height: 100%;
     flex-grow: 1;
     justify-content: flex-end;
+    @include phone() {
+        display: none;
+    }
 }
 
 .icon-svg {

@@ -5,6 +5,10 @@ html, body, ul, button, input, textarea {
     font-weight: 300;
 }
 
+// body, html {
+//     overflow-x: hidden;             // crutch
+// }
+
 ul {
     list-style: none;
 }
@@ -19,16 +23,31 @@ a {
     box-sizing: border-box;
 }
 
+.hp-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
 //----------------------------------- section 1 ----------------
+
+.hp-section1 {
+    @include phone() {
+        height: auto;
+    }
+}
 
 .section1-bg {
     background-image: url(../img/main.jpg);
     background-image: url(../img/main5.jpg);    // MAIN()
-    // background-image: url(../img/main6.jpg);
-    // background-image: url(../img/main7.jpg);
+    background-image: url(../img/main6.jpg);
+    background-image: url(../img/main7.jpg);
     // background-image: url(../img/main8.jpg);
     background-size: cover;
+    position: absolute;
+    z-index: -1;
     height: 100%;
+    width: 100%;
 }
 
 .overlay {
@@ -47,6 +66,13 @@ a {
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
+    @include phone() {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 120px 10px 40px 10px;
+        transform: none;
+    }
 }
 
 .title1 {
@@ -108,7 +134,6 @@ a {
     transform: translateX(-50%);
     width: 40px;
     height: 72px;
-
     &::after {
         content: "";
         position: absolute;
@@ -120,6 +145,9 @@ a {
         width: 40px;
         height: 40px;
         animation: 2s arrow-bounce infinite ease;
+    }
+    @include phone() {
+        display: none;
     }
 }
 
@@ -156,7 +184,11 @@ a {
 .hp-section2 {
     display: flex;
     background-image: linear-gradient(#fff, #fff 43%, #e8e8e8);
-    min-height: 520px;
+    min-height: 650px;
+    @include phone() {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .section-2-image {
@@ -169,12 +201,27 @@ a {
         right: 0;
         bottom: -14%;
     }
+    @include phone() {
+        width: 100%;
+        height: auto;
+        & img {
+            position: static;
+            max-height: 60vh;
+            margin: 40px auto;
+            display: block;
+            right: auto;
+            bottom: auto;
+        }
+    }
 }
 
 .section-2-advantages {
     height: 100%;
     width: 67%;
     position: relative;
+    @include phone() {
+        width: 100%;
+    }
 }
 
 .middle {
@@ -182,11 +229,15 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @include phone() {
+        position: static;
+        transform: none;
+    }
 }
 
 .middle--section-2 {
     width: 77.11443%;
-    margin: auto;
+    margin: 30px auto;
 }
 
 .advantages-title {
@@ -195,6 +246,9 @@ a {
         font-size: 86.5px;
         font-weight: 300;
         margin: 0;
+        @include phone() {
+            font-size: 64px;
+        }
     }
 }
 
@@ -205,17 +259,25 @@ a {
 
 .iconContent {
     width: 33%;
-    height: 280px; // media 180px
+    height: 280px;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
     padding: 50px 20px 0 20px;
+    @include phone() {
+        width: 50%;
+        height: 180px;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
 }
 
 .iconContent:hover {
-    transition: all .3s ease-in-out;
     & .icon-text {
         padding-top: 25px;
+        @include phone() {
+            padding: 10px 0;
+        }
       }
     & .icon-subtext {
         opacity: 1;
@@ -236,11 +298,17 @@ a {
 
 .icon-text {    
     font-size: 21.6px;
+    @include phone() {
+        font-size: 16px;
+    }
     padding: 10px 0;
 }
 
 .icon-subtext {    
     opacity: 0;
+    @include phone() {
+        display: none;
+    }
 }
 
 // --------------------- section 3 -----------------------
@@ -248,13 +316,14 @@ a {
 .hp-section3 {
     background: #fff;
     position: relative;
-    height: 70vh;
+    height: auto;
 }
 
 .middle--section-3 {
+    position: static;
+    margin: 60px auto;
+    transform: none;
     width: 90%;
-    top: 45%;
-    margin: auto;
 }
 
 .title {
@@ -263,13 +332,16 @@ a {
         font-size: 86.5px;
         font-weight: 300;
         margin: 0;
+        @include phone() {
+            font-size: 56px;
+        }
     }
 }
 
 .steps-icon {
-    height: 50px;
+    height: 70px;
     & img {
-        height: 50px;
+        height: 100%;
     }
 }
 
@@ -278,6 +350,11 @@ a {
     text-align: center;
     width: 33%;
     padding: 60px 20px 0 20px;
+    @include phone() {
+        display: block;
+        margin: auto;
+        width: auto;
+    }
 }
 
 .steps-title {
@@ -289,11 +366,18 @@ a {
     & a {
         display: inline-block;
         margin-right: 25px;
+        @include phone() {
+            margin: 0 10px;
+        }
         & svg {
             padding-right: 3px;
         }
         & span, & svg {
             vertical-align: middle;
+            @include phone() {
+                display: block;
+                margin: auto;
+            }
         }
     }
     & a:hover {
@@ -307,11 +391,17 @@ a {
     height: 50vh;
     background: #191919;
     position: relative;
+    @include phone() {
+        height: auto;
+    }
 }
 
 .middle--section4 {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    @include phone() {
+        margin: 40px auto;
+    }
 }
 
 .section4-text {
@@ -326,6 +416,9 @@ a {
     font-weight: 300;
     color: #fff;
     text-align: center;
+    @include phone() {
+        font-size: 32px;
+    }
 }
 
 .section4-button {
@@ -352,6 +445,9 @@ a {
     // max-width: 800px;
     width: 70%;
     text-align: center;
+    @include phone() {
+        width: 90%;
+    }
 }
 
 .workarea-title {
@@ -360,13 +456,16 @@ a {
         font-size: 48px;
         padding-bottom: 10px;
         margin-bottom: 0;
+        @include phone() {
+            font-size: 42px;
+        }
     }
     & p {
         color: #999;
     }
 }
 
-form {
+.workarea-form {
     margin-top: 50px;
 }
 
@@ -376,9 +475,15 @@ form {
     vertical-align: top;
     padding: 5px;
     margin-bottom: 15px;
+    @include phone() {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 0;
+    }
 }
 
-input, textarea {
+.workarea-form-input, .workarea-form-textarea, .form-submit {
     width: 100%;
     margin-bottom: 23px;
     padding: 17px;
@@ -392,11 +497,18 @@ input, textarea {
     &:focus {
         outline: 1px solid #fbb623;
     }
+    @include phone() {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+}
+
+.workarea-form-textarea {
+    height: 236px;
 }
 
 textarea {
     resize: none;
-    height: 236px;
 }
 
 .form-submit {
@@ -415,7 +527,7 @@ textarea {
 // ------------------------- section-5 (contacts) -------------------------
 
 .section-contacts {
-    margin: 70px 0 50px 0;
+    margin: 45px 0 50px 0;
     position: relative;
 }
 
@@ -425,12 +537,18 @@ textarea {
         font-weight: 300;
         font-size: 48px;
         margin: 20px 0;
+        @include phone() {
+            font-size: 36px;
+        }
     }
 }
 
 .phones-list {
     display: flex;
     justify-content: center;
+    @include phone() {
+        flex-direction: column;
+    }
 }
 
 .phones-list__item {

@@ -103,13 +103,13 @@ block content
                 .workarea-title
                     h2 Напишите нам
                     p Для любых вопросов и предложений заполните форму
-                form(action="")
+                form(action="").workarea-form
                     .form__block
-                        input(type="text", placeholder="Имя*")
-                        input(type="email", placeholder="Phone*")
-                        input(type="tel", placeholder="Email")
+                        input(type="text", placeholder="Имя*").workarea-form-input
+                        input(type="email", placeholder="Phone*").workarea-form-input
+                        input(type="tel", placeholder="Email").workarea-form-input
                     .form__block
-                        textarea(name="message", cols="30", rows="10", placeholder="Сообщение*")
+                        textarea(name="message", cols="30", rows="10", placeholder="Сообщение*").workarea-form-textarea
                     input(type="submit", value="Отправить").form-submit
             .section-contacts
                 .contacts
