@@ -1,0 +1,77 @@
+extends ../_template.pug
+
+block content
+    +header()
+    section.drive-section.drive-section1
+        .drive-sec1-bg
+        .drive-sec1-overlay
+        .drive-sec1-title-container
+            .drive-sec1-container
+                h1.drive-sec1-container__title Лучшие водители выбирают Lite
+                .drive-sec1-container__text Подключайтесь к международному сервису такси и получайте заказы без простоя и холостого пробега.
+    section.drive-section.drive-section2
+        .drive-sec2-container
+            .drive-sec2-container__title
+                h1 Почему Lite?
+            .drive-sec2-container__advantages
+                ul.drive-sec2-advantages-list
+                    li.drive-sec2-advantages-item
+                        .drive-sec2-advantages-item-icon
+                            img(src="./img/icons/dr-icon1.png", alt="")
+                        .drive-sec2-advantages-item-title Высокий доход
+                        .drive-sec2-advantages-item-text Частные и корпоративные поездки с высоким средним чеком
+                    li.drive-sec2-advantages-item
+                        .drive-sec2-advantages-item-icon
+                            img(src="./img/icons/dr-icon2.png", alt="")
+                        .drive-sec2-advantages-item-title Награждение водителей
+                        .drive-sec2-advantages-item-text Подарки лучшим из лучшим по итогам каждого квартала
+                    li.drive-sec2-advantages-item
+                        .drive-sec2-advantages-item-icon
+                            img(src="./img/icons/dr-icon3.png", alt="")
+                        .drive-sec2-advantages-item-title Брендированные авто
+                        .drive-sec2-advantages-item-text Специальные условия и повышенные тарифы
+                    li.drive-sec2-advantages-item
+                        .drive-sec2-advantages-item-icon
+                            img(src="./img/icons/dr-icon4.png", alt="")
+                        .drive-sec2-advantages-item-title Лучшие водители
+                        .drive-sec2-advantages-item-text Средний рейтинг водителей 4,8 и выше
+                    li.drive-sec2-advantages-item
+                        .drive-sec2-advantages-item-icon
+                            img(src="./img/icons/dr-icon5.png", alt="")
+                        .drive-sec2-advantages-item-title Лояльные клиенты
+                        .drive-sec2-advantages-item-text Дружелюбные и лояльные пассажиры
+                    li.drive-sec2-advantages-item
+                        .drive-sec2-advantages-item-icon
+                            img(src="./img/icons/dr-icon6.png", alt="")
+                        .drive-sec2-advantages-item-title Программа лояльности
+                        .drive-sec2-advantages-item-text Скидка на топливо, мойки, питание и т.д.
+    section.drive-section.drive-section3
+        .drive-sec3-bg-left
+        .drive-sec3-bg-right
+        .drive-sec3-container
+            .drive-sec3-container1
+                .drive-sec3-container1__block
+                    .drive-sec3-container1__icon
+                        img(src="./img/svg/dr-review-icon.svg", alt="rew-icon")
+                    .drive-sec3-container1__text "Lite действительно ценит водителей, создает все условия для нормальной работы" <br> <p>Роман
+            .drive-sec3-container2
+                .drive-sec3-container2__block
+                    .drive-sec3-container2-title Присоединяйтесь к нам!
+                    a(href="#").drive-sec3-container2-button Регистрация
+    section.drive-section.drive-section4
+        .drive-sec4-container
+            h1.drive-sec4-container-title Станьте лучшим водителем в городе
+            ul.drive-sec4-container-list
+                li.drive-sec4-container-item
+                    .drive-sec4-container-item__icon
+                        img(src="./img/svg/section3-icon2.svg", alt="")
+                    .drive-sec4-container-item__title Зарегистрируйтесь
+                li.drive-sec4-container-item
+                    .drive-sec4-container-item__icon
+                        img(src="./img/svg/section3-icon1.svg", alt="")
+                    .drive-sec4-container-item__title Скачайте бесплатное приложение
+                li.drive-sec4-container-item
+                    .drive-sec4-container-item__icon
+                        img(src="./img/svg/section3-icon3.svg", alt="")
+                    .drive-sec4-container-item__title Получайте заказы
+    +footer()
